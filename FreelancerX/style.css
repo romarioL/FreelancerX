@@ -54,3 +54,21 @@
 	width: 200px;
 }
 
+@media screen and (max-width: 900px) {
+	.banner-folders {
+		flex-direction: column;
+	}
+
+	.folder {
+		margin: 5px;
+		padding: 10px;
+	}
+
+	.folder-img {
+		height: 50px;
+		width: 50px;
+	}
+
+ 
+}
+
