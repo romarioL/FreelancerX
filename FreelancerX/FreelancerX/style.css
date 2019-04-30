@@ -1,0 +1,56 @@
+.main-screen {
+	height: 600px;
+	width: 100%;
+	margin-top: 0;
+	padding: 80px;
+	color: white;
+	text-align: justify;
+}
+
+.button-primary {
+	background-color: white;
+	color: black;
+	padding: 10px;
+}
+
+.banner-folders {
+	display: flex;
+	margin: 80px;
+	justify-content: space-around;
+}
+
+.folder {
+	color: black;
+	margin: 40px;
+	text-align: center;
+	background-color: white;
+	padding: 50px;
+}
+
+.folder-img {
+	height: 200px;
+	width: 200px;
+}
+
+.banner-posts {
+	background-color: white;
+	min-height: 400px;
+	min-width: 600px;
+	margin: 30px;
+	padding: 80px;
+
+}
+
+.post {
+	text-align: justify;
+}
+
+.post-link {
+	color: black;
+}
+
+.post img{
+	height: 200px;
+	width: 200px;
+}
+
