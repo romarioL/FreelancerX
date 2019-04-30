@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="banner-folders">
+<div class="banner-folders ">
 	<div class="folder">
 		<img class="folder-img" src="<?php bloginfo('template_url'); ?>/img/html.svg" />
 		<h4>HTML</h4>

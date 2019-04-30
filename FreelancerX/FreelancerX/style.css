@@ -14,8 +14,8 @@
 }
 
 .banner-folders {
-	display: flex;
 	margin: 80px;
+	display:  flex;
 	justify-content: space-around;
 }
 
@@ -24,7 +24,7 @@
 	margin: 40px;
 	text-align: center;
 	background-color: white;
-	padding: 50px;
+	padding: 80px;
 }
 
 .folder-img {
@@ -52,5 +52,23 @@
 .post img{
 	height: 200px;
 	width: 200px;
+}
+
+@media screen and (max-width: 900px) {
+	.banner-folders {
+		flex-direction: column;
+	}
+
+	.folder {
+		margin: 5px;
+		padding: 10px;
+	}
+
+	.folder-img {
+		height: 50px;
+		width: 50px;
+	}
+
+ 
 }
 
