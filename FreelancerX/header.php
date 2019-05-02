@@ -20,9 +20,37 @@
 
       <div class="main-header col s12 l12">
 
+           <div class="navbar-fixed black">
+               <nav class="black">
+                <div class="nav-wrapper">
+                  <a href="#" data-activates="primary-mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+                  <?php
+                   wp_nav_menu( array(
+                    'menu'              => 'primary',
+                    'menu_id'       => 'primary-menu',
+                    'theme_location'    => 'primary',
+                    'depth'             =>  1,
+                    'container'         => 'div',
+                    'menu_class'    => 'left hide-on-med-and-down',
+                    'walker'      =>  new Materialize_Walker_Nav_Menu()
+                ));
 
-         <?php wp_nav_menu(array('menu' => 'Nome do Menu', 'container' => 'nav', 'container_class' => 'menu black', 'menu_class' => 'menu-links')); ?>
+                   wp_nav_menu( array(
+                    'menu'              => 'primary',
+                    'menu_id'       => 'primary-mobile-menu',
+                    'theme_location'    => 'primary',
+                    'depth'             =>  1,
+                    'container'         => 'div',
+                    'menu_class'    => 'side-nav',
+                    'walker'      =>  new Materialize_Walker_Nav_Menu(),
+                ));
+                   ?>
+                </div>
+               </nav>
 
+           </div>
+  
+       
          <div class="main-screen black">
 
           <?php 

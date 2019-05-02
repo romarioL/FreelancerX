@@ -1,8 +1,27 @@
 <?php
 
-register_nav_menus(array(
-   'principal' => __('menu principal', 'FreelancerX')
-));  
+// Require Materialize Custom Nav Walker Class
+require get_template_directory() . '/class-materialize-navwalker.php';
+
+add_action( 'wp_footer' , 'materialize_nav_walker_dropdown_init' );
+
+if( ! function_exists('materialize_nav_walker_dropdown_init') ) {
+
+  function materialize_nav_walker_dropdown_init() { ?>
+      <script>
+          jQuery(document).ready(function($) {
+              jQuery(".nav-item-dropdown-button").dropdown({constrainWidth: true});
+              jQuery(".side-menu-nav-item-dropdown-button").dropdown({constrainWidth: false});
+              jQuery(".button-collapse").sideNav();
+          });
+      </script>
+  <?php }
+
+}
+
+
+
+
 
 if ( function_exists('register_sidebar') )
   register_sidebar(array(
